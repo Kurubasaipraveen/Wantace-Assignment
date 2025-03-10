@@ -31,3 +31,11 @@ cd backend
 cd frontend
 npm start
 
+
+
+5️⃣ API Endpoints
+Method	Endpoint	Description
+GET	/api/recipes	Fetch all recipes
+GET	/api/recipes/:id	Get recipe details
+POST	/api/recipes	Add a new recipe
+PUT	/api/recipes/:id	Update recipe details
