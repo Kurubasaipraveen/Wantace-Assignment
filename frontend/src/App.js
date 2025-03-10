@@ -11,7 +11,7 @@ const App = () => {
         <h1>🍲 Recipe Manager praveen</h1>
         <nav>
           <Link to="/" style={styles.link}>Home</Link>
-          <Link to="/add-recipe" style={styles.link}>➕ Add Recipe</Link>
+          <Link to="/add-recipe" style={styles.link}> Add Recipe</Link>
         </nav>
         <Routes>
           <Route path="/" element={<RecipeList />} />
