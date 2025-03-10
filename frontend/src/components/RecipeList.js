@@ -6,7 +6,7 @@ const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/recipes")
+    axios.get("https://wantace-assignment.onrender.com/api/recipes")
       .then(response => setRecipes(response.data))
       .catch(error => console.error("Error fetching recipes:", error));
   }, []);

@@ -24,7 +24,7 @@ const RecipeForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/recipes", {
+      await axios.post("https://wantace-assignment.onrender.com/api/recipes", {
         ...recipe,
         ingredients: recipe.ingredients.split(",").map(item => item.trim()), // Convert to array
       });
