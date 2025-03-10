@@ -15,7 +15,7 @@ const RecipeDetails = () => {
   });
 
   useEffect(() => {
-    axios.get(`https://wantace-assignment.onrender.com/api/recipes/${id}`)
+    axios.get(`https://wantace-assignment-1.onrender.com/api/recipes/${id}`)
       .then(response => {
         setRecipe(response.data);
         setUpdatedRecipe({
@@ -34,7 +34,7 @@ const RecipeDetails = () => {
       ingredients: updatedRecipe.ingredients.split(",").map(i => i.trim()),
     };
 
-    axios.put(`https://wantace-assignment.onrender.com/api/recipes/${id}`, formattedData)
+    axios.put(`https://wantace-assignment-1.onrender.com/api/recipes/${id}`, formattedData)
       .then(response => {
         setRecipe(response.data);
         setIsEditing(false);
